@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    padding-top: 60px;
+}
+header{
+    height: 60px;
+    background-color: #f6f6f6;
+    position: fixed;/* affecte le width càd transforme un element from block to inline block c pour ça je fais width:100 */
+    width:100%;
+    top:0;
+    transition: height 0.5s;
+}
+header ul{
+    list-style: none;
+    display:flex;
+    justify-content: center;
+}
+header ul li a{
+    display:block;
+    margin:5px;
+    background-color: #f50;
+    color:#fff;
+    text-decoration: none;
+    padding:10px;
+}
+section{
+    min-height:400px;
+}
+section.home{
+    background-color: coral;
+}
+section.about{
+    background-color: cornflowerblue;
+}
+section.portfolio{
+    background-color: darkcyan;
+}
+section.contact{
+    background-color: darkviolet;
+}
+.portfolio img{
+    width:350px;
+    height:250px;
+
+}
+.active{
+    background-color: green;
+
+}
+.changeHeader{
+    background-color: gold;
+    box-shadow: 5px 2px 3px #000;
+}
+.scrollTop{
+    position:fixed;
+    bottom:10px;
+    right:0;
+    background-color: red;
+    color:#fff;
+    cursor: pointer;
+    padding:15px;
+    display:none;
+}
